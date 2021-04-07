@@ -25,7 +25,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res)=>{
     res.render('index', {
         title: 'Weather',
-        name: 'Rafael'
+        name: 'Rafael Winter'
     }) /* sebd to client the handlebars module */
 })
 
@@ -34,14 +34,14 @@ app.get('/help', (req, res)=>{
     res.render('help', {
         title: "Help page",
         name: "Rafael Winter",
-        description: "Putting a description just to be different from the other ones"
+        description: "This is a simple page to call a forecast API. To use it, fill the input button with the place you want to know the weather and click 'Search'"
     })
 })
 
 app.get('/about', (req, res)=>{
     res.render('about', {
         title: "About",
-        name: "Rafael"
+        name: "Rafael Winter"
     })
 })
 
@@ -87,7 +87,7 @@ app.get('*',(req, res)=>{
     res.render('my404', {
         title: "Page not found",
         name: "Rafael Winter",
-        message: "this page doesn't exist"
+        message: "The page you are looking for doesn't exist"
     })
 })
 
