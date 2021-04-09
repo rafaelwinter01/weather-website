@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e)=>{
     messageOne.textContent = 'Loading Forecast'
     messageTwo.textContent = ''
 
-    weatherIcon.src = ''
+    weatherIcon.innerHTML = ''
 
     const location = search.value
 
