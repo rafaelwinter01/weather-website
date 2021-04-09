@@ -74,3 +74,10 @@ button {
     color: white;
     padding: 8px;
 }
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+}
